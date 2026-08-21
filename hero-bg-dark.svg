@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="heroBaseD" x1="0" y1="0" x2="1600" y2="900" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0a0a0a"/>
+      <stop offset="0.55" stop-color="#120a10"/>
+      <stop offset="1" stop-color="#1d0f19"/>
+    </linearGradient>
+    <radialGradient id="heroGlowPinkD" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#ec008b" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#ec008b" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="heroGlowGrayD" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#bebebe" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#bebebe" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="facet1D" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#ec008b" stop-opacity="0.22"/>
+    </linearGradient>
+    <linearGradient id="facet2D" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0" stop-color="#ec008b" stop-opacity="0.28"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0.1"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#heroBaseD)"/>
+
+  <circle cx="1250" cy="180" r="420" fill="url(#heroGlowPinkD)"/>
+  <circle cx="220" cy="720" r="380" fill="url(#heroGlowGrayD)"/>
+
+  <g opacity="0.95">
+    <polygon points="1180,-60 1520,260 1180,760 840,260" fill="url(#facet1D)"/>
+    <polygon points="1180,-60 1520,260 1180,340 840,260" fill="url(#facet2D)"/>
+    <polygon points="840,260 1180,340 1180,760" fill="#ec008b" opacity="0.1"/>
+    <polygon points="1520,260 1180,340 1180,760" fill="#bebebe" opacity="0.08"/>
+  </g>
+
+  <g opacity="0.7">
+    <polygon points="230,560 430,700 230,980 30,700" fill="url(#facet2D)"/>
+    <polygon points="230,560 430,700 230,740 30,700" fill="url(#facet1D)"/>
+  </g>
+
+  <path d="M -50 760 C 250 680, 350 840, 620 760 S 980 640, 1250 720 S 1550 660, 1700 700"
+        fill="none" stroke="#ec008b" stroke-width="6" stroke-linecap="round" stroke-dasharray="2 26" opacity="0.55"/>
+  <path d="M -50 760 C 250 680, 350 840, 620 760 S 980 640, 1250 720 S 1550 660, 1700 700"
+        fill="none" stroke="#4a4a4a" stroke-width="1.5" opacity="0.6"/>
+</svg>
