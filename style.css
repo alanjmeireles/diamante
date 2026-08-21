@@ -4,7 +4,7 @@
   --pink-dark: #c2006f;
   --pink-light: #ff4fb8;
   --gray: #bebebe;
-  --gray-dark: #6f6f6f;
+  --gray-dark: #5c5c5c;
   --ink: #232323;
   --surface: #ffffff;
   --header-bg: rgba(247, 247, 247, 0.75);
@@ -42,7 +42,7 @@ body {
   background: var(--white);
   color: var(--ink);
   font-family: var(--font-body);
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.65;
   -webkit-font-smoothing: antialiased;
   transition: background-color 0.35s ease, color 0.35s ease;
@@ -142,10 +142,10 @@ a { color: inherit; text-decoration: none; }
   padding-bottom: 14px;
 }
 .brand { display: flex; align-items: center; gap: 10px; }
-.brand-mark { width: auto; height: 34px; }
+.brand-mark { width: auto; height: 30px; }
 
 @media (min-width: 761px) {
-  .brand-mark { height: 48px; }
+  .brand-mark { height: 38px; }
 }
 
 .main-nav { display: flex; align-items: center; gap: 6px; }
@@ -255,7 +255,7 @@ a { color: inherit; text-decoration: none; }
 }
 .hero-stats dd {
   margin: 0;
-  font-size: 0.85rem;
+  font-size: 0.92rem;
   color: var(--gray-dark);
   letter-spacing: 0.02em;
 }
@@ -326,7 +326,7 @@ a { color: inherit; text-decoration: none; }
 }
 .differential-icon svg { width: 30px; height: 30px; }
 .differential h3 { font-size: 1.05rem; font-weight: 500; }
-.differential p { font-size: 0.9rem; }
+.differential p { font-size: 0.95rem; }
 
 /* Quote band */
 .quote-band {
@@ -405,11 +405,11 @@ textarea { resize: vertical; }
 }
 .footer-brand { display: grid; gap: 10px; align-content: start; }
 .footer-brand img { margin-bottom: 4px; }
-.footer-brand p { color: #a8a8a8; font-size: 0.9rem; margin-top: 6px; }
+.footer-brand p { color: #b0b0b0; font-size: 0.92rem; margin-top: 6px; }
 .footer-links { display: grid; gap: 12px; align-content: start; }
-.footer-links a { font-size: 0.92rem; color: #d8d8d8; }
+.footer-links a { font-size: 0.94rem; color: #d8d8d8; }
 .footer-links a:hover { color: var(--pink-light); }
-.footer-contact { display: grid; gap: 10px; font-size: 0.92rem; align-content: start; }
+.footer-contact { display: grid; gap: 10px; font-size: 0.94rem; align-content: start; }
 .footer-copy {
   text-align: center;
   font-size: 0.82rem;
