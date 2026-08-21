@@ -13,13 +13,13 @@
       <stop offset="0" stop-color="#bebebe" stop-opacity="0.5"/>
       <stop offset="1" stop-color="#bebebe" stop-opacity="0"/>
     </radialGradient>
-    <linearGradient id="facet1" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#ffffff" stop-opacity="0.55"/>
-      <stop offset="1" stop-color="#ec008b" stop-opacity="0.12"/>
-    </linearGradient>
-    <linearGradient id="facet2" x1="0" y1="1" x2="1" y2="0">
+    <linearGradient id="diamondTop" x1="0" y1="1" x2="1" y2="0">
       <stop offset="0" stop-color="#ec008b" stop-opacity="0.18"/>
-      <stop offset="1" stop-color="#ffffff" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0.6"/>
+    </linearGradient>
+    <linearGradient id="diamondBottom" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.4"/>
+      <stop offset="1" stop-color="#ec008b" stop-opacity="0.3"/>
     </linearGradient>
   </defs>
 
@@ -28,17 +28,24 @@
   <circle cx="1250" cy="180" r="420" fill="url(#heroGlowPink)"/>
   <circle cx="220" cy="720" r="380" fill="url(#heroGlowGray)"/>
 
-  <!-- faceted diamond motif, oversized and off-canvas for a subtle luxury texture -->
+  <!-- diamond cluster, top-right -->
   <g opacity="0.9">
-    <polygon points="1180,-60 1520,260 1180,760 840,260" fill="url(#facet1)"/>
-    <polygon points="1180,-60 1520,260 1180,340 840,260" fill="url(#facet2)"/>
-    <polygon points="840,260 1180,340 1180,760" fill="#ec008b" opacity="0.06"/>
-    <polygon points="1520,260 1180,340 1180,760" fill="#bebebe" opacity="0.14"/>
+    <polygon points="1080,260 1250,10 1420,260" fill="url(#diamondTop)"/>
+    <polygon points="1080,260 1250,510 1420,260" fill="url(#diamondBottom)"/>
+    <polygon points="990,150 1080,20 1170,150" fill="url(#diamondTop)"/>
+    <polygon points="990,150 1080,280 1170,150" fill="url(#diamondBottom)"/>
+    <polygon points="1345,430 1400,350 1455,430" fill="url(#diamondTop)"/>
+    <polygon points="1345,430 1400,510 1455,430" fill="url(#diamondBottom)"/>
   </g>
 
-  <g opacity="0.6">
-    <polygon points="230,560 430,700 230,980 30,700" fill="url(#facet2)"/>
-    <polygon points="230,560 430,700 230,740 30,700" fill="url(#facet1)"/>
+  <!-- diamond cluster, bottom-left -->
+  <g opacity="0.75">
+    <polygon points="90,740 230,540 370,740" fill="url(#diamondTop)"/>
+    <polygon points="90,740 230,940 370,740" fill="url(#diamondBottom)"/>
+    <polygon points="320,610 380,525 440,610" fill="url(#diamondTop)"/>
+    <polygon points="320,610 380,695 440,610" fill="url(#diamondBottom)"/>
+    <polygon points="85,845 120,795 155,845" fill="url(#diamondTop)"/>
+    <polygon points="85,845 120,895 155,845" fill="url(#diamondBottom)"/>
   </g>
 
   <!-- winding route line, evoking a highway journey -->
