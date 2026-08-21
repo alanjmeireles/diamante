@@ -13,13 +13,13 @@
       <stop offset="0" stop-color="#bebebe" stop-opacity="0.18"/>
       <stop offset="1" stop-color="#bebebe" stop-opacity="0"/>
     </radialGradient>
-    <linearGradient id="facet1D" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#ffffff" stop-opacity="0.18"/>
-      <stop offset="1" stop-color="#ec008b" stop-opacity="0.22"/>
+    <linearGradient id="diamondTopD" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0" stop-color="#ec008b" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0.22"/>
     </linearGradient>
-    <linearGradient id="facet2D" x1="0" y1="1" x2="1" y2="0">
-      <stop offset="0" stop-color="#ec008b" stop-opacity="0.28"/>
-      <stop offset="1" stop-color="#ffffff" stop-opacity="0.1"/>
+    <linearGradient id="diamondBottomD" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.12"/>
+      <stop offset="1" stop-color="#ec008b" stop-opacity="0.42"/>
     </linearGradient>
   </defs>
 
@@ -29,15 +29,21 @@
   <circle cx="220" cy="720" r="380" fill="url(#heroGlowGrayD)"/>
 
   <g opacity="0.95">
-    <polygon points="1180,-60 1520,260 1180,760 840,260" fill="url(#facet1D)"/>
-    <polygon points="1180,-60 1520,260 1180,340 840,260" fill="url(#facet2D)"/>
-    <polygon points="840,260 1180,340 1180,760" fill="#ec008b" opacity="0.1"/>
-    <polygon points="1520,260 1180,340 1180,760" fill="#bebebe" opacity="0.08"/>
+    <polygon points="1080,260 1250,10 1420,260" fill="url(#diamondTopD)"/>
+    <polygon points="1080,260 1250,510 1420,260" fill="url(#diamondBottomD)"/>
+    <polygon points="990,150 1080,20 1170,150" fill="url(#diamondTopD)"/>
+    <polygon points="990,150 1080,280 1170,150" fill="url(#diamondBottomD)"/>
+    <polygon points="1345,430 1400,350 1455,430" fill="url(#diamondTopD)"/>
+    <polygon points="1345,430 1400,510 1455,430" fill="url(#diamondBottomD)"/>
   </g>
 
-  <g opacity="0.7">
-    <polygon points="230,560 430,700 230,980 30,700" fill="url(#facet2D)"/>
-    <polygon points="230,560 430,700 230,740 30,700" fill="url(#facet1D)"/>
+  <g opacity="0.8">
+    <polygon points="90,740 230,540 370,740" fill="url(#diamondTopD)"/>
+    <polygon points="90,740 230,940 370,740" fill="url(#diamondBottomD)"/>
+    <polygon points="320,610 380,525 440,610" fill="url(#diamondTopD)"/>
+    <polygon points="320,610 380,695 440,610" fill="url(#diamondBottomD)"/>
+    <polygon points="85,845 120,795 155,845" fill="url(#diamondTopD)"/>
+    <polygon points="85,845 120,895 155,845" fill="url(#diamondBottomD)"/>
   </g>
 
   <path d="M -50 760 C 250 680, 350 840, 620 760 S 980 640, 1250 720 S 1550 660, 1700 700"
