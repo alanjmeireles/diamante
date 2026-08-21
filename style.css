@@ -440,7 +440,7 @@ textarea { resize: vertical; }
 /* Pattern divider */
 .pattern-divider {
   height: 44px;
-  background-image: url('../img/pattern-diamantes.png');
+  background-image: url('pattern-diamantes.png');
   background-repeat: repeat-x;
   background-position: center;
   background-size: auto 100%;
